@@ -1,4 +1,4 @@
-import discord
+""""import discord"""
 import random
 
 class MyRunes:
@@ -17,6 +17,10 @@ class MyRunes:
 	rune22C = 0
 	rune23C = 0
 
+	basicRune1 = 0
+	basicRune2 = 0
+	basicRune3 = 0
+
 	def __init__(self):
 		"""Init runes"""
 		self.runeF = 0
@@ -29,25 +33,56 @@ class MyRunes:
 		self.rune22C = 0
 		self.rune23C = 0
 
-	def randomRuneF(self):
+		self.basicRune1 = 0
+		self.basicRune2 = 0
+		self.basicRune3 = 0
+
+	def _random_RuneF(self):
 		"""Random number to choose Fundamental Rune"""
 		rnd.randint(1,4)
 
-	def randomRune2F(self):
+	def _random_Rune2F(self):
 		"""Random number to choose Fundamental Rune"""
-		rnd.randint(1,4)
-
-	def randomNumber(self):
-		"""Random number to choose basic Rune"""
 		rnd.randint(1,3)
 
-	def giveRandNum(self):
+	def _random_Number(self):
+		"""Random number to choose basic Rune"""
+		"""And basic rune"""
+		rnd.randint(1,3)
+
+	def _random_Number_Second_Rune(self):
+		"""Random number to choose basic Rune"""
+		"""And basic rune"""
+		rnd.randint(1,3)
+
+	def _give_Rand_Num(self):
 		"""Give a number to our runes"""
-		runeF.randomRuneF()
+		runeF._random_RuneF()
+		rune1C._random_Number()
+		rune2C._random_Number()
+		rune3C._random_Number()
+
+		rune2F._random_Rune2F()
+		rune21C._random_Number_Second_Rune()
+		rune22C._random_Number_Second_Rune()
+		rune23C._random_Number_Second_Rune()
+
+		basicRune1._random_Number()
+		basicRune2._random_Number()
+		basicRune3._random_Number()
+		
+	def _display(self):
 		print ("Rune Fundamental : - ",rune1F)
-		rune1C.randomNumber()
 		print ("Rune row 1 : - ",rune1C)
-		rune2C.randomNumber()
 		print ("Rune row 2 : - ",rune2C)
-		rune3C.randomNumber()
 		print ("Rune row 3 : - ",rune3C)
+		print ("---------------")
+		print ("Rune Fundamental : - ",rune2F)
+		print ("Second Rune 1 : - ",rune21C)
+		print ("Second Rune 2 : - ",rune22C)
+		print ("Second Rune 3 : - ",rune23C)
+		print ("---------------")
+		print ("Basic Rune 1 : - ",basicRune1)
+		print ("Basic Rune 1 : - ",basicRune2)
+		print ("Basic Rune 1 : - ",basicRune3)
+		
